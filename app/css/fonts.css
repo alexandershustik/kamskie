@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'tint';
+	src: url('../fonts/MerelThin/MerelThin.eot');
+	src: local('☺'), url('../fonts/MerelThin/MerelThin.woff') format('woff'), url('../fonts/MerelThin/MerelThin.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'light';
+	src: url('../fonts/MerelLight/MerelLight.eot');
+	src: local('☺'), url('../fonts/MerelLight/MerelLight.woff') format('woff'), url('../fonts/MerelLight/MerelLight.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'regular';
+	src: url('../fonts/MerelRegular/MerelRegular.eot');
+	src: local('☺'), url('../fonts/MerelRegular/MerelRegular.woff') format('woff'), url('../fonts/MerelRegular/MerelRegular.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'bold';
+	src: url('../fonts/MerelBold/MerelBold.eot');
+	src: local('☺'), url('../fonts/MerelBold/MerelBold.woff') format('woff'), url('../fonts/MerelBold/MerelBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

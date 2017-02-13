@@ -1,3 +1,4 @@
+@import "app/css/fonts"
 
 $tablet: 'only screen and (max-width: 1024px)'
 $mobile: 'only screen and (max-width: 767px)'
@@ -6,6 +7,7 @@ $landscape: 'only screen and (orientation: landscape) and (max-width: 1024px)'
 $mobile-landscape: 'only screen and (orientation: landscape) and (max-width: 767px)'
 
 $accent: #ff0f00
+$sub: #1c2444
 
 html, body
 	margin: 0
@@ -13,25 +15,23 @@ html, body
 	max-width: 1920px
 	min-width: 1440px
 	max-height: 1080px
-	min-height: 900px
+	min-height: 700px
 	background: aqua
 	margin: 0 auto
+	font-family: regular
+	font-size: 16px
+	line-height: 18px
 .wrapper
 	display: flex
 	width: 100%
 	height: 100vh
 	background: gold
 	justify-content: space-between
+	align-items: flex-start
 	margin: 0 auto
 	position: relative
 .menu-wrap
-	width: 100px
-	height: 100px
-	background: azure
-	margin: 30px
-	display: flex
-	justify-content: space-between
-	align-items: center
+	margin: 43px 30px
 .logo-wrap
 	width: 100px
 	height: 100px
@@ -54,10 +54,49 @@ html, body
 	position: absolute
 	left: 0
 	bottom: 0
+.menu-first-string
+	display: flex
+	align-items: center
 .menu-btn
-	width: 80px
-	height: 80px
+	width: 78px
+	height: 74px
 	background: $accent
+	display: flex
+	align-content: center
+	flex-wrap: wrap
+	align-items: center
+	text-align: center
+	strong
+		width: 100%
+		font-family: bold
+		color: #fff
+		margin-top: 5px
+.menu-span-wrap
+	width: 100%
+	padding: 0 25px
+	span
+		background: #FFF
+		width: 100%
+		height: 4px
+		display: block
+		&:nth-child(2)
+			margin: 4px 0
+.menu-text
+	font-family: tint
+	font-size: 24px
+	color: #fff
+	width: 220px
+	margin-left: 55px
+	line-height: 30px
+	text-transform: uppercase
+.menu-block
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		background: $sub
+		//width: 325px
+	
 
 
 
