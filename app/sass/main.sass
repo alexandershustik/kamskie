@@ -66,6 +66,7 @@ html, body
 	flex-wrap: wrap
 	align-items: center
 	text-align: center
+	cursor: pointer
 	strong
 		width: 100%
 		font-family: bold
@@ -90,13 +91,44 @@ html, body
 	line-height: 30px
 	text-transform: uppercase
 .menu-block
+	position: relative
+	height: 0px
+	overflow: hidden
+	transition: .2s
+	&.open
+		height: 708px
 	ul
 		padding: 0
 		margin: 0
 		list-style-type: none
 		background: $sub
 		//width: 325px
-	
+		padding: 30px 40px
+	li
+		padding: 18px
+		display: block
+		margin: 0
+	a
+		font-size: 18px
+		color: #fff
+		text-decoration: none
+		padding: 15px
+		border: 4px solid transparent
+		box-sizing: border-box
+		&.active
+			border-color: #fff
+			color: $accent
+			font-family: bold
+		&:hover
+			border-color: #fff
+			color: $accent
+.menu-close-btn
+	position: absolute
+	bottom: 20px
+	right: 30px
+	content: url(../img/menu-close-btn.png)
+	cursor: pointer
+
 
 
 

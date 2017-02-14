@@ -116,7 +116,8 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .menu-btn strong {
     width: 100%;
     font-family: bold;
@@ -143,8 +144,43 @@ html, body {
   line-height: 30px;
   text-transform: uppercase; }
 
-.menu-block ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  background: #1c2444; }
+.menu-block {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: .2s;
+  transition: .2s; }
+  .menu-block.open {
+    height: 708px; }
+  .menu-block ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: #1c2444;
+    padding: 30px 40px; }
+  .menu-block li {
+    padding: 18px;
+    display: block;
+    margin: 0; }
+  .menu-block a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border: 4px solid transparent;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .menu-block a.active {
+      border-color: #fff;
+      color: #ff0f00;
+      font-family: bold; }
+    .menu-block a:hover {
+      border-color: #fff;
+      color: #ff0f00; }
+
+.menu-close-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  content: url(../img/menu-close-btn.png);
+  cursor: pointer; }
