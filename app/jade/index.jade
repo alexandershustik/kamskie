@@ -6,7 +6,9 @@ head
 	title Kamskie
 	link(rel="stylesheet", href="css/main.css")
 body
-	.wrapper
+	.wrapper.day
+		.logo-wrap
+			img(src="img/logo.png", alt="logo")
 		.menu-wrap
 			.menu-first-string
 				.menu-btn
@@ -43,8 +45,16 @@ body
 					li
 						a(href="#") Контакты
 				.menu-close-btn
-		.logo-wrap
 		.info-wrap
+			.first-info
+				.icons-wrap
+					span.icon-sun.active 1
+					span.icon-moon 2
+				.phone-wrap
+					span +7 342 204-04-72
+					span 204-04-70
+			.second-info
+				button.info-btn задать вопрос
 		.copyright-wrap
 		.footer-wrap
 script(src="js/libs.min.js")
