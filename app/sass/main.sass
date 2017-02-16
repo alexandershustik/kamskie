@@ -18,7 +18,6 @@ html, body
 	min-width: 1440px
 	max-height: 1080px
 	min-height: 700px
-	background: aqua
 	margin: 0 auto
 	font-family: regular
 	font-size: 16px
@@ -26,6 +25,10 @@ html, body
 .wrapper
 	width: 100%
 	height: 100vh
+	max-width: 1920px
+	min-width: 1440px
+	max-height: 1080px
+	min-height: 700px
 	margin: 0 auto
 	position: relative
 	&.day
@@ -158,6 +161,7 @@ html, body
 		padding: 0 10px
 		opacity: .5
 		transition: .2s
+		cursor: pointer
 		&:first-child
 			padding-left: 0
 		&:last-child
@@ -180,13 +184,6 @@ html, body
 	padding: 40px 50px 0 60px
 	span
 		display: block
-.copyright-wrap
-	width: 100px
-	height: 100px
-	background: fuchsia
-	position: absolute
-	right: 0
-	top: 200px
 .footer-wrap
 	width: 100px
 	height: 100px
@@ -212,9 +209,48 @@ html, body
 	padding: 12px 22px 10px
 	transition: .2s
 	width: 190px
+	cursor: pointer
 	&:hover
 		background: #fff
 		color: $accent
 		border-color: $accent
-
-
+.third-info
+	font-family: bold
+	font-size: 20px
+	color: #fff
+	text-align: right
+	line-height: 20px
+	margin-top: 80px	
+	width: 100px
+	margin-left: 260px
+	position: relative
+	span
+		display: block
+		margin-top: 40px
+		position: relative
+		&:before
+			position: absolute
+			top: -25px
+			left: 0
+			width: 100px
+			height: 10px
+			content: ""
+			background: #fff
+	strong
+		position: absolute
+		top: 55px
+		right: 0
+		height: 10px
+		content: ""
+		background: $accent
+		z-index: 1
+.copyright-wrap
+	//background: fuchsia
+	position: absolute
+	right: -490px
+	top: 540px
+	font-size: 8px
+	color: #fff
+	opacity: .2
+	background: red
+	transform: rotate(-90deg)

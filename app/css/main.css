@@ -34,7 +34,6 @@ html, body {
   min-width: 1440px;
   max-height: 1080px;
   min-height: 700px;
-  background: aqua;
   margin: 0 auto;
   font-family: regular;
   font-size: 16px;
@@ -43,6 +42,10 @@ html, body {
 .wrapper {
   width: 100%;
   height: 100vh;
+  max-width: 1920px;
+  min-width: 1440px;
+  max-height: 1080px;
+  min-height: 700px;
   margin: 0 auto;
   position: relative; }
   .wrapper.day {
@@ -221,7 +224,8 @@ html, body {
     padding: 0 10px;
     opacity: .5;
     -webkit-transition: .2s;
-    transition: .2s; }
+    transition: .2s;
+    cursor: pointer; }
     .icons-wrap span:first-child {
       padding-left: 0; }
     .icons-wrap span:last-child {
@@ -247,14 +251,6 @@ html, body {
   padding: 40px 50px 0 60px; }
   .phone-wrap span {
     display: block; }
-
-.copyright-wrap {
-  width: 100px;
-  height: 100px;
-  background: fuchsia;
-  position: absolute;
-  right: 0;
-  top: 200px; }
 
 .footer-wrap {
   width: 100px;
@@ -290,8 +286,52 @@ html, body {
   padding: 12px 22px 10px;
   -webkit-transition: .2s;
   transition: .2s;
-  width: 190px; }
+  width: 190px;
+  cursor: pointer; }
   .info-btn:hover {
     background: #fff;
     color: #ff0f00;
     border-color: #ff0f00; }
+
+.third-info {
+  font-family: bold;
+  font-size: 20px;
+  color: #fff;
+  text-align: right;
+  line-height: 20px;
+  margin-top: 80px;
+  width: 100px;
+  margin-left: 260px;
+  position: relative; }
+  .third-info span {
+    display: block;
+    margin-top: 40px;
+    position: relative; }
+    .third-info span:before {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 100px;
+      height: 10px;
+      content: "";
+      background: #fff; }
+  .third-info strong {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    height: 10px;
+    content: "";
+    background: #ff0f00;
+    z-index: 1; }
+
+.copyright-wrap {
+  position: absolute;
+  right: -490px;
+  top: 540px;
+  font-size: 8px;
+  color: #fff;
+  opacity: .2;
+  background: red;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
